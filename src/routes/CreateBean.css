@@ -1,0 +1,75 @@
+/* Container */
+.create-bean-container {
+   max-width: 450px;
+   margin: 2rem auto;
+   padding: 2rem;
+   background-color: #FFFFFF;
+   border-radius: 16px;
+   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+   text-align: center;
+ }
+ 
+ /* Header */
+ .create-bean-container h2 {
+   margin-bottom: 1.5rem;
+   color: #4F2CA9; /* deep muted purple */
+   font-size: 1.8rem;
+   font-weight: 700;
+ }
+ 
+ /* Form Layout */
+ .create-bean-form {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+ }
+ 
+ /* Labels */
+ .create-bean-form label {
+   text-align: left;
+   font-weight: 600;
+   color: #333;
+   margin-bottom: 0.25rem;
+ }
+ 
+ /* Inputs + Select */
+ .create-bean-form input,
+ .create-bean-form select {
+   padding: 0.7rem 1rem;
+   border-radius: 10px;
+   border: 1px solid #DDE2EB;
+   font-size: 1rem;
+   background-color: #FAFAFE;
+   transition: border 0.2s ease, box-shadow 0.2s ease;
+ }
+ 
+ .create-bean-form input:focus,
+ .create-bean-form select:focus {
+   outline: none;
+   border-color: #A770FF;      /* lighter purple */
+   box-shadow: 0 0 6px rgba(167, 112, 255, 0.5);
+ }
+ 
+ /* Button */
+ .create-bean-form button {
+   margin-top: 1rem;
+   padding: 0.8rem;
+   border: none;
+   border-radius: 12px;
+   background-color: #FF47DA;   /* Fall Guys pink */
+   color: white;
+   font-size: 1.1rem;
+   font-weight: 700;
+   cursor: pointer;
+   transition: background 0.2s ease, transform 0.15s ease;
+ }
+ 
+ .create-bean-form button:hover {
+   background-color: #D93AB8;
+   transform: translateY(-2px);
+ }
+ 
+ .create-bean-form button:active {
+   transform: translateY(0px);
+ }
+ 

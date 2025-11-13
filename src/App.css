@@ -1,42 +1,111 @@
+:root {
+  /* ==== Light Neutral Backgrounds ==== */
+  --color-bg: #FAFCFF;         /* Main background — almost white */
+  --color-nav-bg: #F4F7FF;     /* Nav background — slightly deeper off-white */
+  --color-text: #222222;
+
+  /* ==== Fall Guys Accent Colors ==== */
+  --color-primary: #FF47DA;      /* Pink */
+  --color-secondary: #00E5FF;    /* Cyan */
+  --color-accent-yellow: #FFE500; /* Yellow */
+  --color-accent-purple: #8B2EFF; /* Purple */
+  --color-accent-blue: #1E90FF;   /* Blue */
+
+  /* Optional darker shades */
+  --color-primary-dark: #D93AB8;
+  --color-secondary-dark: #00BBD1;
+  --color-purple-dark: #6E23CC;
+  --color-blue-dark: #156FDB;
+
+  --color-border: #E0E6F0;
+  --color-shadow: rgba(0, 0, 0, 0.06);
+}
+
+h1, h2, h3 {
+  color: #4F2CA9;  /* deep muted purple */
+  margin-top: 0;
+}
+
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove the constraint that boxed everything in */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: none;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* NAV LAYOUT */
+
+
+.nav-outlet {
+  display: flex;
+  min-height: 100vh; /* make sure it fills the full screen height */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Sidebar */
+nav {
+  background-color: #FFFFFF;
+  border-right: 1px solid #E0E4EC;
+  width: 10rem;      /* control how wide your nav is */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;  /* stack nav links vertically */
+  justify-content: flex-start;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav-link {
+  color: #A770FF;       /* lighter purple */
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: color 0.2s ease;
 }
 
-.card {
-  padding: 2em;
+.nav-link:hover {
+  background-color: rgba(167, 112, 255, 0.12); /* soft purple hover */
+  color: #8B2EFF;   /* use bold purple on hover */
 }
 
-.read-the-docs {
-  color: #888;
+/* MAIN */
+
+header button {
+  background-color: var(--color-accent-purple);
+  color: #fff;
+  border: none;
+  padding: 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: larger;
+  width: 50%;
+  margin-top: 1rem;
 }
+
+main {
+  flex: 1;            /* take up remaining space */
+  padding: 2rem;
+  background-color: #ffffff; /* optional */
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* BEAN GALLERY */
+
+.beans-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
