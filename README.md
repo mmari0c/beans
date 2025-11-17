@@ -6,7 +6,7 @@ This web app: Allows you to create your own beans from the game "Fall Guys". Cre
 
 ## Features
 
-- [x] **The web app contains a page that features a create form to add a new bean*
+- [x] **The web app contains a page that features a create form to add a new bean**
   - Users can name the bean
   - Users can set the bean's attributes by clicking on one of several values
 - [x] **The web app includes a summary page of all the user’s added beans**
